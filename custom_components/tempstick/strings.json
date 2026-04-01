@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect TempStick",
+        "description": "Enter your TempStick API key. You can find this in the TempStick web portal under Account Settings.",
+        "data": {
+          "api_key": "API Key",
+          "poll_interval": "Poll Interval (minutes)",
+          "temperature_unit": "Temperature Unit"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid API key. Please check your TempStick API key.",
+      "cannot_connect": "Cannot connect to the TempStick API. Check your internet connection.",
+      "unknown": "Unexpected error. Please check the logs."
+    },
+    "abort": {
+      "already_configured": "TempStick is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "TempStick Options",
+        "data": {
+          "poll_interval": "Poll Interval (minutes)",
+          "temperature_unit": "Temperature Unit"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "temperature": { "name": "Temperature" },
+      "humidity": { "name": "Humidity" },
+      "battery": { "name": "Battery" },
+      "rssi": { "name": "Signal Strength" }
+    },
+    "binary_sensor": {
+      "alert": { "name": "Alert" }
+    }
+  }
+}

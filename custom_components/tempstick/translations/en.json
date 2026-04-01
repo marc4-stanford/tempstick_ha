@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect TempStick",
+        "description": "Enter your TempStick API key from the TempStick web portal (Account → API Settings).",
+        "data": {
+          "api_key": "API Key",
+          "poll_interval": "Poll Interval (minutes)",
+          "temperature_unit": "Temperature Unit"
+        },
+        "data_description": {
+          "api_key": "Your TempStick cloud API key (starts with ts_live_...)",
+          "poll_interval": "How often to fetch new readings from TempStick (1–60 minutes)",
+          "temperature_unit": "F for Fahrenheit, C for Celsius"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid API key — please double-check in the TempStick portal.",
+      "cannot_connect": "Unable to reach the TempStick API. Check your internet connection.",
+      "unknown": "Unexpected error occurred. Please check the Home Assistant logs."
+    },
+    "abort": {
+      "already_configured": "TempStick is already set up."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "TempStick Options",
+        "data": {
+          "poll_interval": "Poll Interval (minutes)",
+          "temperature_unit": "Temperature Unit"
+        }
+      }
+    }
+  }
+}

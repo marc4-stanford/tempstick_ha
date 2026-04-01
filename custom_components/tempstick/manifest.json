@@ -1,0 +1,13 @@
+{
+  "domain": "tempstick",
+  "name": "TempStick",
+  "version": "1.0.0",
+  "documentation": "https://github.com/yourusername/ha-tempstick",
+  "issue_tracker": "https://github.com/yourusername/ha-tempstick/issues",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@yourusername"],
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "integration_type": "hub"
+}

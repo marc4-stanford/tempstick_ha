@@ -1,5 +1,6 @@
 {
-    "name": "Tempstick",
-    "homeassistant": "2026.3.2",
-    "hacs": "2.0.5"
+  "name": "TempStick",
+  "domains": ["sensor", "binary_sensor"],
+  "iot_class": "cloud_polling",
+  "homeassistant": "2023.6.0"
 }
